@@ -1,0 +1,31 @@
+<resources>
+
+    //about UI
+    <string name="app_name">UserSignUpSystem</string>
+    <string name="email">email</string>
+    <string name="password">parola</string>
+    <string name="login">Giriş Yap</string>
+    <string name="register">Kayıt Ol!</string>
+    <string name="name">kullanıcı adı</string>
+    <string name="country">ülke</string>
+    <string name="age">yaş</string>
+    <string name="confirm_password">parolayı onayla</string>
+    <string name="logout">Çıkış</string>
+    <string name="Sign_up">Kayıt Ol</string>
+    <string name="cancel">İptal</string>
+    <string name="error_symbol">!</string>
+
+    //about errors
+    <string name="error_no_password">Lütfen parolanızı giriniz!</string>
+    <string name="error_invalid_email">Email geçersiz veya desteklenmiyor!</string>
+    <string name="error_invalid_password">Parola 6 ile 20 karakter arasında olmalıdır!</string>
+    <string name="error_invalid_username">Kullanıcı adı 6 ile 20 karakter olmalıdır!</string>
+    <string name="error_unregistered_email">Kayıtlı olmayan email. Lütfen kayıt olunuz!</string>
+    <string name="error_registered_email">Bu emaile ait bir hesap zaten mevcut!</string>
+    <string name="error_wrong_password">Yanlış email veya parola!</string>
+    <string name="error_wrong_passwordConfirm">Parolalar uyuşmamaktadır. Lütfen kontrol ediniz!</string>
+    <string name="error_database_read">Sunucu hatası. Veri alınamadı!!</string>
+    <string name="error_network">Ağ hatası! İnternetinizi kontrol ediniz!</string>
+    <string name="error">!</string>
+
+</resources>
