@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/new_ic_launcher"
         android:supportsRtl="true"
 
-        android:theme="@style/AppTheme">
+        android:theme="@style/LightTheme">
 
         <activity android:name=".LoginActivity">
             <intent-filter>
