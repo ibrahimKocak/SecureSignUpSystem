@@ -5,6 +5,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -87,6 +89,27 @@ public class RegisterActivity extends Activity {
         init();
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.register_actionbar,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+
+        int id = item.getItemId();
+
+        if(id==R.id.profile){
+
+            return true;
+        }
+        if(id==R.id.setting){
+
+            return true;
+        }
+        return true;
+    }
     public void reg_register_onclick(View view) {       //kayit Ol tusu tiklama olayi
 
         passwordConfirm = String.valueOf(et_passwordConfirm.getText());

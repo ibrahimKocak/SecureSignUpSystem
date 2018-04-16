@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Setting"
+        android:icon="@mipmap/ic_setting"
+        android:id="@+id/setting"
+        android:showAsAction="ifRoom"/>
+
+    <item
+        android:title="About"
+        android:id="@+id/about"
+        android:showAsAction="never"
+        android:orderInCategory="100"/>
+
+</menu>
