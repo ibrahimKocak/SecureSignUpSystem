@@ -1,4 +1,4 @@
-package com.example.ibrah.usersignupsystem;
+package com.example.ibrah.usersignupsystem.Models.Hash192;
 
 public class MyHash {
 
@@ -15,7 +15,7 @@ public class MyHash {
             -334035833, -87191247, 2055493528, -1351983033, -1870778435, -499902894, 627536653, 251663435, -1057617990,
             1701807347, 1640816190, -1793579980, 452748357, -34591231, 104898579, -1832716584};
 
-    String hash(String value){
+    public String hash(String value){
 
         ConvertBlocks192 convertBlocks192 = new ConvertBlocks192();         //hash'lenecek veriyi integer blocklari haline cevirecek nesene
 
@@ -82,13 +82,6 @@ public class MyHash {
     private int shift(int A, int count){
 
         return Integer.rotateLeft(A, count);
-/*
-        int temp = A ;
-        temp >>>= 30-count;
-        A = A <<= count;
-        A += temp;
-        return A;
-*/
     }
 
 

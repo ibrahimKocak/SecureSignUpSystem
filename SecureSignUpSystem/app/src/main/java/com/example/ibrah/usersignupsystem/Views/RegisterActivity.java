@@ -1,4 +1,4 @@
-package com.example.ibrah.usersignupsystem;
+package com.example.ibrah.usersignupsystem.Views;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +11,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.example.ibrah.usersignupsystem.R;
+
+import com.example.ibrah.usersignupsystem.Models.Login.User;
+import com.example.ibrah.usersignupsystem.Models.Hash192.MyHash;
+import com.example.ibrah.usersignupsystem.Controllers.Encode;
+import com.example.ibrah.usersignupsystem.Controllers.Login.UserRules;
+import com.example.ibrah.usersignupsystem.Views.Login.LoginActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

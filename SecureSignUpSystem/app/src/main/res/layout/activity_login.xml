@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="24dp"
-    tools:context="com.example.ibrah.usersignupsystem.LoginActivity">
+    tools:context="com.example.ibrah.usersignupsystem.Views.Login.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

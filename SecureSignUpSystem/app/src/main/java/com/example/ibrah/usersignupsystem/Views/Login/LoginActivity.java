@@ -1,4 +1,4 @@
-package com.example.ibrah.usersignupsystem;
+package com.example.ibrah.usersignupsystem.Views.Login;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,10 +9,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.ibrah.usersignupsystem.MainActivity;
+import com.example.ibrah.usersignupsystem.Models.Hash192.MyHash;
+import com.example.ibrah.usersignupsystem.R;
+import com.example.ibrah.usersignupsystem.Controllers.Login.UserRules;
+import com.example.ibrah.usersignupsystem.Views.RegisterActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -113,7 +117,7 @@ public class LoginActivity extends Activity {
         }
         return true;
     }
-
+/*
     public void login_login_onclick(View view) {
 
         email = String.valueOf(et_email.getText());
@@ -125,6 +129,16 @@ public class LoginActivity extends Activity {
             salts.child(Encode.encode(email)).addValueEventListener(listenerSalt);
             users.child(Encode.encode(email)).addValueEventListener(listenerUser);  //emaile girilen degere ait veritabanındaki referansa giris kosullarini iceren listener'ı atıyoruz. email yoksa null donuyor
         }
+    }
+*/
+
+    //Asıl fonksiyon yukarısı, burası test için otomatik giriş
+    public void login_login_onclick(View view) {
+
+        Toast.makeText(LoginActivity.this,"Giriş Başarılı",Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     private boolean ruleChecker() {

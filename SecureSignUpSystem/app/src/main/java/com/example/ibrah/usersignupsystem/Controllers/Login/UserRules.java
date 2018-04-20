@@ -1,15 +1,15 @@
-package com.example.ibrah.usersignupsystem;
+package com.example.ibrah.usersignupsystem.Controllers.Login;
 
 //Bu sinif kullanici verilerinin bazi kurallara uyma durumunu kontrol eder.
 
-class UserRules {
+public class UserRules {
 
-    static boolean check_name(String userName) {
+    public static boolean check_name(String userName) {
 
         return !(userName.length() < 6 || userName.length() > 20);
     }
 
-    static boolean check_email(String email) {
+    public static boolean check_email(String email) {
 
         return email.endsWith("@hotmail.com") ||       //mail kisminin populer bir email servisi olarak girilmesini istiyoruz
                 email.endsWith("@gmail.com") ||
@@ -26,7 +26,7 @@ class UserRules {
                 email.endsWith("@windowslive.com");
     }
 
-    static boolean check_password(String password) {        //sifre 8 ile 16 karakter arasinda olsun istiyoruz
+    public static boolean check_password(String password) {        //sifre 8 ile 16 karakter arasinda olsun istiyoruz
 
         return !(password.length() < 8 || password.length() > 16);
     }

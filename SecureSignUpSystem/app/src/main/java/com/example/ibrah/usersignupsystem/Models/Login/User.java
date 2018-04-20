@@ -1,8 +1,8 @@
-package com.example.ibrah.usersignupsystem;
+package com.example.ibrah.usersignupsystem.Models.Login;
 
 //Kullanici sinifi, veri tabanina direk bu sinifin nesneleri kayit edilir.
 
-class User {
+public class User {
 
     private String email,name,password;
 
@@ -10,20 +10,20 @@ class User {
 
     }
 
-    User(String name, String email, String password) {
+    public User(String name, String email, String password) {
 
         this.email = email;
         this.name = name;
         this.password = password;
     }
 
-    String getEmail() {
+    public String getEmail() {
         return email;
     }
-    String getUserName() {
+    public String getUserName() {
         return name;
     }
-    String getPassword() {
+    public String getPassword() {
         return password;
     }
 
@@ -35,7 +35,7 @@ class User {
     void setUserName(String name) {
         this.name = name;
     }
-    void setPassword(String password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 }
